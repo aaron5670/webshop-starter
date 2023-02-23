@@ -3,7 +3,7 @@
   "private": true,
   "description": "A proprietary Admin system to manage Medusa Stores",
   "version": "0.1.0",
-  "author": "@medusajs",
+  "author": "Aaron van den Berg",
   "resolutions": {
     "devcert": "1.2.1",
     "postcss": "^8.4.5",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@hookform/error-message": "^2.0.0",
-    "@medusajs/medusa": "^1.7.7",
+    "@medusajs/medusa": "^1.7.8",
     "@radix-ui/react-accordion": "^1.0.1",
     "@radix-ui/react-avatar": "^1.0.1",
     "@radix-ui/react-collapsible": "^1.0.1",
@@ -107,14 +107,11 @@
     "vitest": "^0.28.4"
   },
   "scripts": {
-    "dev": "vite --port 7000",
-    "develop": "npm run dev",
-    "check": "tsc",
+    "dev": "vite --port 7001",
+    "start": "vite preview --port 7001",
     "build": "vite build",
-    "preview": "vite preview --port 7000",
+    "check": "tsc",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "start": "npm run dev",
-    "serve": "npm run preview",
     "test": "vitest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
