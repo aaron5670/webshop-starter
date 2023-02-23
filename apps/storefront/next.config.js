@@ -9,7 +9,6 @@ module.exports = withStoreConfig({
       'medusa-public-images.s3.eu-west-1.amazonaws.com',
       'localhost',
       'medusa-demo-store-images.ams3.digitaloceanspaces.com',
-      'medusa-demo-store-images.ams3.cdn.digitaloceanspaces.com',
     ],
   },
 });
