@@ -36,7 +36,7 @@ const MainMenu = () => {
           </button>
         </div>
         <div>
-          <h1 className="text-xl-semi uppercase">Acme</h1>
+          <h1 className="text-xl-semi uppercase">Demo webshop</h1>
         </div>
         <div className="flex-1 basis-0 flex justify-end">
           <button onClick={close}>
@@ -67,7 +67,7 @@ const MainMenu = () => {
                     className="flex items-center justify-between w-full"
                     onClick={close}
                   >
-                    <span className="sr-only">Go to Store</span>
+                    <span className="sr-only">Ga naar de webshop</span>
                     <span>Store</span>
                     <ChevronDown className="-rotate-90" />
                   </button>
@@ -85,7 +85,7 @@ const MainMenu = () => {
                           onClick={close}
                         >
                           <span className="sr-only">
-                            Go to {collection.title} collection
+                            Ga naar de {collection.title} collectie
                           </span>
                           <span>{collection.title}</span>
                           <ChevronDown className="-rotate-90" />
@@ -110,8 +110,8 @@ const MainMenu = () => {
                       className="flex items-center justify-between border-b border-gray-200 py-2 w-full"
                       onClick={close}
                     >
-                      <span className="sr-only">Go to sign in page</span>
-                      <span className="normal-case">Sign in</span>
+                      <span className="sr-only">Ga naar de inlogpagina</span>
+                      <span className="normal-case">Inloggen</span>
                       <ChevronDown className="-rotate-90" />
                     </button>
                   </a>
@@ -119,7 +119,7 @@ const MainMenu = () => {
               </div>
             ) : (
               <div className="flex flex-col gap-y-4">
-                <span className="text-gray-700 uppercase">Signed in as</span>
+                <span className="text-gray-700 uppercase">Aangemeld als</span>
                 <Link href={`/account`} passHref>
                   <a>
                     <button
@@ -135,13 +135,13 @@ const MainMenu = () => {
               </div>
             )}
             <div className="flex flex-col gap-y-4">
-              <span className="text-gray-700 uppercase">Delivery</span>
+              <span className="text-gray-700 uppercase">Levering</span>
               <button
                 className="flex items-center justify-between border-b border-gray-200 py-2"
                 onClick={setScreenCountry}
               >
                 <span className="sr-only">
-                  Click to select shipping country
+                  Klik om het land van verzending te selecteren
                 </span>
                 <div className="flex items-center gap-x-2">
                   <ReactCountryFlag countryCode={countryCode || "us"} svg />
