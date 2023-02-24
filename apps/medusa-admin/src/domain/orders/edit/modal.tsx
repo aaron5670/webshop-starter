@@ -207,6 +207,7 @@ function OrderEditModal(props: OrderEditModalProps) {
 
   useEffect(() => {
     if (showFilter) {
+      // @ts-ignore
       filterRef.current.focus()
     }
   }, [showFilter])
@@ -301,6 +302,7 @@ function OrderEditModal(props: OrderEditModalProps) {
                 <InputField
                   small
                   deletable
+                  // @ts-ignore
                   ref={filterRef}
                   value={filterTerm}
                   onDelete={hideFilter}

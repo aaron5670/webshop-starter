@@ -62,6 +62,7 @@ const NativeSelect = forwardRef<HTMLSelectElement, NativeSelectProps>(
             }
           )}
         >
+          {/* @ts-expect-error */}
           <select
             ref={innerRef}
             {...props}

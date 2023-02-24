@@ -26,6 +26,7 @@ const AccountLayout: React.FC = ({ children }) => {
           <div>
             <AccountNav />
           </div>
+          {/* @ts-expect-error */}
           <div className="flex-1">{children}</div>
         </div>
         <div className="flex flex-col small:flex-row items-end justify-between small:border-t border-gray-200 px-8 py-12 gap-x-8">

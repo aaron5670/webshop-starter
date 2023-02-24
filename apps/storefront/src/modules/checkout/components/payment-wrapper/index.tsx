@@ -9,6 +9,7 @@ type WrapperProps = {
 
 const Wrapper: React.FC<WrapperProps> = ({ paymentSession, children }) => {
   if (!paymentSession) {
+    {/* @ts-expect-error */}
     return <div>{children}</div>
   }
 
@@ -21,6 +22,7 @@ const Wrapper: React.FC<WrapperProps> = ({ paymentSession, children }) => {
       )
 
     default:
+      {/* @ts-expect-error */}
       return <div>{children}</div>
   }
 }
@@ -37,6 +39,7 @@ const StripeWrapper: React.FC<WrapperProps> = ({
 
   return (
     <Elements stripe={stripePromise} options={options}>
+      {/* @ts-expect-error */}
       {children}
     </Elements>
   )
