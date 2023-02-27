@@ -4,6 +4,7 @@ import clsx from "clsx"
 import React from "react"
 import PaymentStripe from "../payment-stripe"
 import PaymentTest from "../payment-test"
+import PaymentIdeal from "@modules/checkout/components/payment-ideal"
 
 type PaymentContainerProps = {
   paymentSession: PaymentSession
@@ -15,15 +16,15 @@ type PaymentContainerProps = {
 const PaymentInfoMap: Record<string, { title: string; description: string }> = {
   stripe: {
     title: "Credit card",
-    description: "Secure payment with credit card",
+    description: "Betaal veilig met credit card",
   },
   "stripe-ideal": {
     title: "iDEAL",
-    description: "Secure payment with iDEAL",
+    description: "Betaal veilig met iDEAL",
   },
   paypal: {
     title: "PayPal",
-    description: "Secure payment with PayPal",
+    description: "Betaal veilig met PayPal",
   },
   manual: {
     title: "Test payment",
@@ -80,6 +81,12 @@ const PaymentElement = ({
       return (
         <div className="pt-8 pr-7">
           <PaymentStripe />
+        </div>
+      )
+    case "stripe-ideal":
+      return (
+        <div className=" pr-7 h-64">
+          <PaymentIdeal />
         </div>
       )
     case "manual":

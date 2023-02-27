@@ -20,6 +20,12 @@ const Wrapper: React.FC<WrapperProps> = ({ paymentSession, children }) => {
           {children}
         </StripeWrapper>
       )
+    case "stripe-ideal":
+      return (
+        <StripeWrapper paymentSession={paymentSession}>
+          {children}
+        </StripeWrapper>
+      )
 
     default:
       {/* @ts-expect-error */}
