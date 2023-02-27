@@ -71,7 +71,7 @@ const GiftCard: React.FC<GiftCardProps> = ({ cart }) => {
   return (
     <div className="w-full bg-white p-6 flex flex-col">
       <div className="mb-4">
-        <h3 className="text-base-semi">Gift Card</h3>
+        <h3 className="text-base-semi">Cadeaubon</h3>
       </div>
       <div className="text-small-regular">
         {appliedGiftCard ? (

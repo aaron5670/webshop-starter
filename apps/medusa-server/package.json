@@ -11,12 +11,12 @@
     "start": "medusa start"
   },
   "dependencies": {
-    "@medusajs/medusa": "^1.6.0",
-    "@medusajs/medusa-cli": "^1.3.3",
-    "medusa-fulfillment-manual": "^1.1.31",
-    "medusa-interfaces": "^1.3.3",
-    "medusa-payment-manual": "^1.0.16",
-    "medusa-payment-stripe": "^1.1.45",
+    "@medusajs/medusa": "^1.7.8",
+    "@medusajs/medusa-cli": "^1.3.8",
+    "medusa-fulfillment-manual": "^1.1.36",
+    "medusa-interfaces": "^1.3.6",
+    "medusa-payment-manual": "^1.0.22",
+    "medusa-payment-stripe": "^1.1.53",
     "medusa-plugin-sendgrid": "^1.3.7",
     "medusa-file-spaces": "^1.3.5",
     "typeorm": "^0.2.36"
